@@ -22,6 +22,8 @@
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900" rel="stylesheet">
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'rel='stylesheet'> 
+    <link href="assets/css/timepicki.css" rel="stylesheet">
     <style>
     .btn-theme {
         background-color: #ce2027;
@@ -360,18 +362,56 @@
     .mb-bot {
         margin-bottom: 15px;
     }
-
-    #basicform2 {
-        display: none;
+    #basicform2{
+        display:none;
     }
-
-    #rembt2 {
-        display: none;
+    #rembt2{
+        display:none;
     }
-
-    #submit2 {
-        display: none;
+    #submit2{
+        display:none;
     }
+    input[type="date"]
+{
+    -webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none;
+
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+}
+input[type="time"]{
+    -webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none;
+
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+
+}
+select {
+
+-webkit-appearance: none; 
+-moz-appearance: none;
+appearance: none;
+
+-moz-border-radius: 30px;
+-webkit-border-radius: 30px;
+border-radius: 30px;
+
+background-position: right center;
+background-color: #CCCCCC;
+color: #000000;
+border: 1px solid #000000;
+background-image:url('https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png')!important;
+background-position-x: 98%;
+background-repeat:no-repeat;
+}
+select::after{
+   content: "url('arrow.svg')!important";
+}
     </style>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
@@ -423,7 +463,7 @@
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="tcaddress1">Time at Current Address
                                                 </label>
-                                                <input type="time" placeholder="From Date" id="tcaddress1"
+                                                <input type="time" placeholder="Time" id="timepicker12"
                                                     name="tcaddress1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
@@ -455,41 +495,52 @@
                                                 <label class="control-label" for="caddress1">Previous Address <span>(if
                                                         within last 3 years)</span> </label>
                                                 <input type="text" placeholder="Previous Address" id="caddress1"
-                                                    name="preaddress1" class="form-control" autocomplete="off">
+                                                    name="caddress1" class="form-control" autocomplete="off">
                                             </div>
 
 
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Driver Licence No (Date
-                                                    From)</label>
-                                                <input type="date" placeholder="" id="udob" name="dlfrom1"
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">Driver Licence Number</label>
+                                                <input type="text" placeholder="Driver Licence Number" id="udob" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Driver Licence No (To
-                                                    Date)</label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="dlto1"
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">State of Issue </label>
+                                                <select class="form-control" autocomplete="off" id="ustatus"
+                                                    name="sstatus">
+                                                    <option>---</option>
+                                                    <option value="single">VIC</option>
+                                                    <option value="married">NSW</option>
+                                                    <option value="de-facto">QLD</option>
+                                                    <option value="married">WA</option>
+                                                    <option value="de-facto">ACT</option>
+                                                    <option value="de-facto">SA</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">Driver Licence Expiry Date</label>
+                                                <input type="date" placeholder="MM/DD/YYYY" id="udl" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-6">
                                                 <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="dob1"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="udobb" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
 
 
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="uname">Phone Number </label>
-                                                <input type="text" placeholder="M" id="uphone" name="mphone1"
+                                                <input type="text" placeholder="M" id="uphone" name="sphone"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="H" id="uphone" name="hphone1"
+                                                <input type="text" placeholder="H" id="uphone" name="sphone"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="W" id="uphone" name="wphone1"
+                                                <input type="text" placeholder="W" id="uphone" name="sphone"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="snamee1">Email Address </label>
-                                                <input type="email" placeholder="Email" id="snamee1" name="emailad1"
+                                                <input type="email" placeholder="Email" id="snamee1" name="sname1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
@@ -497,12 +548,12 @@
                                                     <label class="control-label" for="rad1">Aust Citizen</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="austcitizen1"
+                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="austcitizen1"
+                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -545,7 +596,7 @@
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                             <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>Current Employment (Borrower 1)</legend>
+                                                <legend>A. Current Employment (Borrower 1)</legend>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Type of Employment </label>
@@ -554,7 +605,6 @@
                                                     <option>---</option>
                                                     <option value="single">PAYG</option>
                                                     <option value="married">Self-Employed</option>
-                                                    <option value="de-facto">Not Employed</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-4">
@@ -574,176 +624,15 @@
                                                     name="caddress1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
-                                            <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>A. Personal Detail (Applicant 1)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Title </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Mr</option>
-                                                    <option value="married">Mrs</option>
-                                                    <option value="de-facto">Miss</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Surname</label>
-                                                <input type="text" placeholder="Surname" id="caddress1" name="caddress1"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">First Name</label>
-                                                <input type="text" placeholder="First Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Middle Name</label>
-                                                <input type="text" placeholder="Middle Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Gender </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Male</option>
-                                                    <option value="married">Female</option>
-                                                    <option value="de-facto">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="clearfix" style="height: 10px;clear: both;"></div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>B. Contact Detail (Applicant 1)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Mobile Number</label>
-                                                <input type="text" placeholder="Mobile Number" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Email Address</label>
-                                                <input type="email" placeholder="Email Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Residential Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">PR</option>
-                                                    <option value="married">Non Resident</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Start Date at Current Address
-                                                </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Current Address</label>
-                                                <input type="text" placeholder="Current Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
+                                        
 
 
                                             <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>C. Identification (Applicant 1)</legend>
+                                                <legend>B. Select Loan Purpose (Applicant 1)</legend>
                                             </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Country Residency</label>
-                                                <input type="text" placeholder="Country Residency" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Citizenship of</label>
-                                                <input type="text" placeholder="Citizenship of" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Residential Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">PR</option>
-                                                    <option value="married">Non Resident</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Driver License
-                                                    Number</label>
-                                                <input type="text" placeholder="Driver License Number" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">State of Issue</label>
-                                                <input type="text" placeholder="State of Issue" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>D. Employment Detail (Applicant 1)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Employed</option>
-                                                    <option value="married">Unemployed</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Type </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Govt</option>
-                                                    <option value="married">Private</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Basis </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Full Time</option>
-                                                    <option value="married">Part Time</option>
-                                                    <option value="married">Casual</option>
-                                                    <option value="married">Contract</option>
-                                                </select>
-                                            </div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>E. Objective and Loan Features (Applicant 1)</legend>
-                                            </div>
+                                           
                                             <div class="col-lg-12">
-                                                <label class="control-label" for="caddress1">Please state primary reason
-                                                    for seeking credit and how this loan may help you fulfil your long
-                                                    term goals.</label>
-                                                <textarea
-                                                    placeholder="Please state primary reason for seeking credit and how this loan may help you fulfil your long term goals."
-                                                    id="caddress1" name="caddress1" class="form-control"
-                                                    autocomplete="off"></textarea>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="">
-                                                    <label class="control-label" for="rad1">Select Loan Purpose</label>
-                                                </div>
+                                            
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Mortage" id="mortage1"
                                                         name="mortage1" value="mortage1"
@@ -779,7 +668,7 @@
 
 
                                             <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>F. Your Financial Security (Applicant 1)</legend>
+                                                <legend>C. Your Financial Security (Applicant 1)</legend>
                                             </div>
 
                                             <div class="col-lg-6">
@@ -878,23 +767,23 @@
 
                                 </div>
                                 <div class="clearfix" style="height: 10px;clear: both;"></div>
-
+                            
                             </fieldset>
                         </div>
                     </form>
                     <div class="row" style="margin-bottom:30px;">
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <button id="addbt1" class="btn btn-primary open3 pull-left mybtn">
-                                    + Add 2nd Borrower
-                                </button>
-                                <button id="submit1" class="btn btn-primary open3 pull-right mybtn">
-                                    Submit
-                                </button>
+                    <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <button id="addbt1" class="btn btn-primary open3 pull-left mybtn">
+                                            + Add 2nd Borrower
+                                        </button>
+                                        <button id="submit1" class="btn btn-primary open3 pull-right mybtn">
+                                            Submit
+                                        </button>
 
-                            </div>
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
+</div>
                     <form name="basicform2" id="basicform2" method="post" action="">
                         <div class="row divdr"></div>
                         <div id="sf1" class="frm">
@@ -922,7 +811,7 @@
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="tcaddress1">Time at Current Address
                                                 </label>
-                                                <input type="date" placeholder="From Date" id="tcaddress1"
+                                                <input type="time" placeholder="Time" id="time2"
                                                     name="tcaddress1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
@@ -958,21 +847,32 @@
                                             </div>
 
 
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Driver Licence No (Date
-                                                    From)</label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">Driver Licence Number</label>
+                                                <input type="text" placeholder="Driver Licence Number" id="udob" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Driver Licence No (To
-                                                    Date)</label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">State of Issue </label>
+                                                <select class="form-control" autocomplete="off" id="ustatus"
+                                                    name="sstatus">
+                                                    <option>---</option>
+                                                    <option value="single">VIC</option>
+                                                    <option value="married">NSW</option>
+                                                    <option value="de-facto">QLD</option>
+                                                    <option value="married">WA</option>
+                                                    <option value="de-facto">ACT</option>
+                                                    <option value="de-facto">SA</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label class="control-label" for="uname">Driver Licence Expiry Date</label>
+                                                <input type="date" placeholder="MM/DD/YYYY" id="dl2" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-lg-6">
                                                 <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="udob2" name="sdob"
                                                     class="form-control" autocomplete="off">
                                             </div>
 
@@ -1044,7 +944,7 @@
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                             <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>Current Employment (Borrower 2)</legend>
+                                                <legend>A. Current Employment (Borrower 2)</legend>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Type of Employment </label>
@@ -1053,8 +953,7 @@
                                                     <option>---</option>
                                                     <option value="single">PAYG</option>
                                                     <option value="married">Self-Employed</option>
-                                                    <option value="de-facto">Not Employed</option>
-                                                </select>
+                                                   </select>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Status </label>
@@ -1073,176 +972,13 @@
                                                     name="caddress1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
-                                            <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>A. Personal Detail (Applicant 2)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Title </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Mr</option>
-                                                    <option value="married">Mrs</option>
-                                                    <option value="de-facto">Miss</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Surname</label>
-                                                <input type="text" placeholder="Surname" id="caddress1" name="caddress1"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">First Name</label>
-                                                <input type="text" placeholder="First Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Middle Name</label>
-                                                <input type="text" placeholder="Middle Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Gender </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Male</option>
-                                                    <option value="married">Female</option>
-                                                    <option value="de-facto">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="clearfix" style="height: 10px;clear: both;"></div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:10px;">
-                                                <legend>B. Contact Detail (Applicant 2)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Mobile Number</label>
-                                                <input type="text" placeholder="Mobile Number" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Email Address</label>
-                                                <input type="email" placeholder="Email Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Residential Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">PR</option>
-                                                    <option value="married">Non Resident</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Start Date at Current Address
-                                                </label>
-                                                <input type="date" placeholder="Date of Birth" id="udob" name="sdob"
-                                                    class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Current Address</label>
-                                                <input type="text" placeholder="Current Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-
-
+                                          
                                             <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>C. Identification (Applicant 2)</legend>
+                                                <legend>B. Select Loan Purpose (Applicant 2)</legend>
                                             </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Country Residency</label>
-                                                <input type="text" placeholder="Country Residency" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Citizenship of</label>
-                                                <input type="text" placeholder="Citizenship of" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Residential Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">PR</option>
-                                                    <option value="married">Non Resident</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">Driver License
-                                                    Number</label>
-                                                <input type="text" placeholder="Driver License Number" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="caddress1">State of Issue</label>
-                                                <input type="text" placeholder="State of Issue" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
-                                            </div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>D. Employment Detail (Applicant 2)</legend>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Employed</option>
-                                                    <option value="married">Unemployed</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Type </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Govt</option>
-                                                    <option value="married">Private</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <label class="control-label" for="uname">Employment Basis </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
-                                                    <option>---</option>
-                                                    <option value="single">Full Time</option>
-                                                    <option value="married">Part Time</option>
-                                                    <option value="married">Casual</option>
-                                                    <option value="married">Contract</option>
-                                                </select>
-                                            </div>
-
-
-
-                                            <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>E. Objective and Loan Features (Applicant 2)</legend>
-                                            </div>
+                                            
                                             <div class="col-lg-12">
-                                                <label class="control-label" for="caddress1">Please state primary reason
-                                                    for seeking credit and how this loan may help you fulfil your long
-                                                    term goals.</label>
-                                                <textarea
-                                                    placeholder="Please state primary reason for seeking credit and how this loan may help you fulfil your long term goals."
-                                                    id="caddress1" name="caddress1" class="form-control"
-                                                    autocomplete="off"></textarea>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="">
-                                                    <label class="control-label" for="rad1">Select Loan Purpose</label>
-                                                </div>
+                                             
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Mortage" id="mortage1"
                                                         name="mortage1" value="mortage1"
@@ -1278,7 +1014,7 @@
 
 
                                             <div class="col-lg-12" style="margin-top:20px;">
-                                                <legend>F. Your Financial Security (Applicant 2)</legend>
+                                                <legend>C. Your Financial Security (Applicant 2)</legend>
                                             </div>
 
                                             <div class="col-lg-6">
@@ -1381,16 +1117,16 @@
                         </div>
                     </form>
                     <div class="form-group">
-                        <div class="col-lg-12">
-                            <button id="rembt2" class="btn btn-primary open3 pull-left mybtn">
-                                - Remove 2nd Borrower
-                            </button>
-                            <button id="submit2" class="btn btn-primary open3 pull-right mybtn">
-                                Submit
-                            </button>
+                                    <div class="col-lg-12">
+                                        <button id="rembt2" class="btn btn-primary open3 pull-left mybtn">
+                                            - Remove 2nd Borrower
+                                        </button>
+                                        <button id="submit2" class="btn btn-primary open3 pull-right mybtn">
+                                            Submit
+                                        </button>
 
-                        </div>
-                    </div>
+                                    </div>
+                                </div>
                 </div>
             </div>
         </div>
@@ -1403,11 +1139,13 @@
     <!-- Form End here -->
 
 
-
+  
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <script type="text/javascript" src="jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+    <script src="assets/js/timepicki.js"></script>
     <script type="text/javascript">
     jQuery().ready(function() {
 
@@ -1448,7 +1186,7 @@
         $("#submit2").show();
         $("#addbt1").hide();
         $("#submit1").hide();
-
+        
     });
     $("#rembt2").click(function() {
         $("#basicform2").hide();
@@ -1459,9 +1197,22 @@
     });
     </script>
 
+<!--<script> 
+        $(document).ready(function() { 
+          
+            $(function() { 
+                $( "#udobb" ).datepicker(); 
+                $( "#udob2" ).datepicker(); 
+                $( "#udl" ).datepicker();
+                $( "#dl2" ).datepicker();
+            }); 
+        }) 
+    </script> 
 
-
-
+    <script>
+	$('#timepicker1').timepicki();
+    $('#time2').timepicki();
+    </script>-->
 </body>
 
 </html>
