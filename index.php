@@ -10,7 +10,7 @@
     <title>Orchid Financial Services</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/fav.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.orchidfinancialservices.com.au/wp-content/uploads/2020/09/cropped-Cheapest-Loan-Service-Provider-In-Melbourne-Home-Loan-Car-Loan-Mortgage-Or-Personal-Loan-Orchid-Financial-Services-32x32.png" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/plugins.min.css" rel="stylesheet" />
@@ -447,12 +447,12 @@ select::after{
                                         <div class="form-group row">
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="gnamee1">Given Name </label>
-                                                <input type="text" placeholder="Given Name" id="gnamee1" name="gname1"
+                                                <input type="text" placeholder="Given Name" id="gname1" name="gname1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="snamee1">Surname </label>
-                                                <input type="text" placeholder="Surname" id="snamee1" name="sname1"
+                                                <input type="text" placeholder="Surname" id="sname1" name="sname1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-12">
@@ -472,75 +472,75 @@ select::after{
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Mortage" id="mortage1"
-                                                        name="mortage1" value="mortage1"
+                                                        name="mortage1" value="Mortage"
                                                         style="min-height:auto!important;" autocomplete="off"> Mortage
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Own" id="own1" name="own1"
-                                                        value="own1" style="min-height:auto!important;"
+                                                        value="Own" style="min-height:auto!important;"
                                                         autocomplete="off"> Own
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Rent" id="rent1" name="rent1"
-                                                        value="rent1" style="min-height:auto!important;"
+                                                        value="Rent" style="min-height:auto!important;"
                                                         autocomplete="off"> Rent
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                        value="Other" style="min-height:auto!important;"
                                                         autocomplete="off"> other
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="caddress1">Previous Address <span>(if
                                                         within last 3 years)</span> </label>
-                                                <input type="text" placeholder="Previous Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Previous Address" id="preaddress1"
+                                                    name="preaddress1" class="form-control" autocomplete="off">
                                             </div>
 
 
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">Driver Licence Number</label>
-                                                <input type="text" placeholder="Driver Licence Number" id="udob" name="sdob"
+                                                <input type="text" placeholder="Driver Licence Number" id="licnumber1" name="licnumber1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">State of Issue </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="issue1"
+                                                    name="issue1">
                                                     <option>---</option>
-                                                    <option value="single">VIC</option>
-                                                    <option value="married">NSW</option>
-                                                    <option value="de-facto">QLD</option>
-                                                    <option value="married">WA</option>
-                                                    <option value="de-facto">ACT</option>
-                                                    <option value="de-facto">SA</option>
+                                                    <option value="VIC">VIC</option>
+                                                    <option value="NSW">NSW</option>
+                                                    <option value="QLD">QLD</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="ACT">ACT</option>
+                                                    <option value="SA">SA</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">Driver Licence Expiry Date</label>
-                                                <input type="date" placeholder="MM/DD/YYYY" id="udl" name="sdob"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="licexp1" name="licexp1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="MM/DD/YYYY" id="udobb" name="sdob"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="dob1" name="dob1"
                                                     class="form-control" autocomplete="off">
                                             </div>
 
 
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="uname">Phone Number </label>
-                                                <input type="text" placeholder="M" id="uphone" name="sphone"
+                                                <input type="text" placeholder="M" id="mphone1" name="mphone1"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="H" id="uphone" name="sphone"
+                                                <input type="text" placeholder="H" id="hphone1" name="hphone1"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="W" id="uphone" name="sphone"
+                                                <input type="text" placeholder="W" id="wphone1" name="wphone1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="snamee1">Email Address </label>
-                                                <input type="email" placeholder="Email" id="snamee1" name="sname1"
+                                                <input type="email" placeholder="Email" id="email1" name="email1"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
@@ -548,13 +548,11 @@ select::after{
                                                     <label class="control-label" for="rad1">Aust Citizen</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
-                                                        value="yes" style="min-height:auto!important;"
-                                                        autocomplete="off"> Yes
+                                               <input type="radio" placeholder="Yes" id="aus1" name="aus1" value="yes" style="min-height:auto!important;" autocomplete="off">Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
-                                                        value="no" style="min-height:auto!important;"
+                                                    <input type="radio" placeholder="Yes" id="aus1" name="aus1"
+                                                        value="No" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
                                             </div>
@@ -563,20 +561,20 @@ select::after{
                                                     <label class="control-label" for="rad1">Status</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="status1" name="status1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> PR
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="status1" name="status1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> Non-Resident
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Marital Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="mstatus1"
+                                                    name="mstatus1">
                                                     <option>---</option>
                                                     <option value="single">Single</option>
                                                     <option value="married">Married</option>
@@ -585,14 +583,14 @@ select::after{
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Age of Dependants</label>
-                                                <input type="text" placeholder="Age of Dependants" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Age of Dependants" id="agedepend1"
+                                                    name="agedepend1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Number of
                                                     Dependants</label>
-                                                <input type="text" placeholder="Number of Dependants" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Number of Dependants" id="numdepend1"
+                                                    name="numdepend1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                             <div class="col-lg-12" style="margin-top:10px;">
@@ -600,28 +598,28 @@ select::after{
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Type of Employment </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="emptype1"
+                                                    name="emptype1">
                                                     <option>---</option>
-                                                    <option value="single">PAYG</option>
-                                                    <option value="married">Self-Employed</option>
+                                                    <option value="PAYG">PAYG</option>
+                                                    <option value="Self-Employed">Self-Employed</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="empstatus1"
+                                                    name="empstatus1">
                                                     <option>---</option>
-                                                    <option value="single">Full Time</option>
-                                                    <option value="married">Part Time</option>
-                                                    <option value="de-facto">Casual</option>
-                                                    <option value="de-facto">Contract</option>
+                                                    <option value="Full Time">Full Time</option>
+                                                    <option value="Part Time">Part Time</option>
+                                                    <option value="Casual">Casual</option>
+                                                    <option value="Contract">Contract</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Employer Name</label>
-                                                <input type="text" placeholder="Employer Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Employer Name" id="empname1"
+                                                    name="empname1" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                         
@@ -634,34 +632,33 @@ select::after{
                                             <div class="col-lg-12">
                                             
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Mortage" id="mortage1"
-                                                        name="mortage1" value="mortage1"
-                                                        style="min-height:auto!important;" autocomplete="off"> Purchase
-                                                    Home (Owner Occupied)
+                                                    <input type="checkbox"  id="purhome1"
+                                                        name="purhome1" value="Purchase Home (Owner Occupied)"
+                                                        style="min-height:auto!important;" autocomplete="off"> Purchase Home (Owner Occupied)
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Own" id="own1" name="own1"
-                                                        value="own1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="refhome1" name="refhome1"
+                                                        value="Refinance Home (Owner Occupied)" style="min-height:auto!important;"
                                                         autocomplete="off"> Refinance Home (Owner Occupied)
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Rent" id="rent1" name="rent1"
-                                                        value="rent1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="debtconso1" name="debtconso1"
+                                                        value="Debt Consolidator" style="min-height:auto!important;"
                                                         autocomplete="off"> Debt Consolidator
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="pip1" name="pip1"
+                                                        value="Purchase Investment Poperty" style="min-height:auto!important;"
                                                         autocomplete="off"> Purchase Investment Poperty
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="riloan1" name="riloan1"
+                                                        value="Refinance Investment Loan" style="min-height:auto!important;"
                                                         autocomplete="off"> Refinance Investment Loan
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="cons1" name="cons1"
+                                                        value="Constructor" style="min-height:auto!important;"
                                                         autocomplete="off"> Constructor
                                                 </div>
                                             </div>
@@ -673,16 +670,16 @@ select::after{
 
                                             <div class="col-lg-6">
                                                 <div class="">
-                                                    <label class="control-label" for="rad1">Have you ever had any
+                                                    <label class="control-label" for="fjudge1">Have you ever had any
                                                         financial judgments or legal proceedings against you?</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad22"
+                                                    <input type="radio" placeholder="Yes" id="fjudge1" name="fjudge1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad22"
+                                                    <input type="radio" placeholder="Yes" id="fjudge1" name="fjudge1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -693,12 +690,12 @@ select::after{
                                                         meeting your financial commitments in the past 2 years? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad33"
+                                                    <input type="radio" placeholder="Yes" id="fcomitt1" name="fcomitt1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad33"
+                                                    <input type="radio" placeholder="Yes" id="fcomitt1" name="fcomitt1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -709,12 +706,12 @@ select::after{
                                                         debts currently in arrears? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad43"
+                                                    <input type="radio" placeholder="Yes" id="arrears1" name="arrears1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad43"
+                                                    <input type="radio" placeholder="Yes" id="arrears1" name="arrears1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -725,12 +722,12 @@ select::after{
                                                         rising interest rates? How concerned are you? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad53"
+                                                    <input type="radio" placeholder="Yes" id="intrates1" name="intrates1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad53"
+                                                    <input type="radio" placeholder="Yes" id="intrates1" name="intrates1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -743,12 +740,12 @@ select::after{
                                                         commitments? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad63"
+                                                    <input type="radio" placeholder="Yes" id="fsituation1" name="fsituation1"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad63"
+                                                    <input type="radio" placeholder="Yes" id="fsituation1" name="fsituation1"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -758,10 +755,10 @@ select::after{
                                                     answered 'Yes' to any of these</label>
                                                 <textarea
                                                     placeholder="Please comment if you answered 'Yes' to any of these"
-                                                    id="caddress1" name="caddress1" class="form-control"
+                                                    id="comment1" name="comment1" class="form-control"
                                                     autocomplete="off"></textarea>
                                             </div>
-
+                                            <input type="text" id="id1" name="id1" value="0" hidden>
                                         </div>
                                     </div>
 
@@ -794,101 +791,101 @@ select::after{
                                         <h4 class="subhead"></h4>
                                         <div class="form-group row">
                                             <div class="col-lg-6">
-                                                <label class="control-label" for="gnamee1">Given Name </label>
-                                                <input type="text" placeholder="Given Name" id="gnamee1" name="gname1"
+                                                <label class="control-label" for="gname2">Given Name </label>
+                                                <input type="text" placeholder="Given Name" id="gname2" name="gname2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="snamee1">Surname </label>
-                                                <input type="text" placeholder="Surname" id="snamee1" name="sname1"
+                                                <input type="text" placeholder="Surname" id="sname2" name="sname2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="caddress1">Current Address </label>
-                                                <input type="text" placeholder="Current Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Current Address" id="caddress2"
+                                                    name="caddress2" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="tcaddress1">Time at Current Address
                                                 </label>
-                                                <input type="time" placeholder="Time" id="time2"
-                                                    name="tcaddress1" class="form-control" autocomplete="off">
+                                                <input type="time" placeholder="Time" id="timepicker12"
+                                                    name="tcaddress2" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="">
                                                     <label class="control-label" for="rad1">Address Status</label>
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Mortage" id="mortage1"
-                                                        name="mortage1" value="mortage1"
+                                                    <input type="checkbox" placeholder="Mortage" id="mortage2"
+                                                        name="mortage2" value="mortage"
                                                         style="min-height:auto!important;" autocomplete="off"> Mortage
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Own" id="own1" name="own1"
-                                                        value="own1" style="min-height:auto!important;"
+                                                    <input type="checkbox" placeholder="Own" id="own2" name="own2"
+                                                        value="own" style="min-height:auto!important;"
                                                         autocomplete="off"> Own
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Rent" id="rent1" name="rent1"
-                                                        value="rent1" style="min-height:auto!important;"
+                                                    <input type="checkbox" placeholder="Rent" id="rent2" name="rent2"
+                                                        value="rent" style="min-height:auto!important;"
                                                         autocomplete="off"> Rent
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox" placeholder="Other" id="other2" name="other2"
+                                                        value="other" style="min-height:auto!important;"
                                                         autocomplete="off"> other
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="caddress1">Previous Address <span>(if
                                                         within last 3 years)</span> </label>
-                                                <input type="text" placeholder="Previous Address" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Previous Address" id="preaddress2"
+                                                    name="preaddress2" class="form-control" autocomplete="off">
                                             </div>
 
 
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">Driver Licence Number</label>
-                                                <input type="text" placeholder="Driver Licence Number" id="udob" name="sdob"
+                                                <input type="text" placeholder="Driver Licence Number" id="licnumber2" name="licnumber2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">State of Issue </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="issue2"
+                                                    name="issue2">
                                                     <option>---</option>
-                                                    <option value="single">VIC</option>
-                                                    <option value="married">NSW</option>
-                                                    <option value="de-facto">QLD</option>
-                                                    <option value="married">WA</option>
-                                                    <option value="de-facto">ACT</option>
-                                                    <option value="de-facto">SA</option>
+                                                    <option value="VIC">VIC</option>
+                                                    <option value="NSW">NSW</option>
+                                                    <option value="QLD">QLD</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="ACT">ACT</option>
+                                                    <option value="SA">SA</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">Driver Licence Expiry Date</label>
-                                                <input type="date" placeholder="MM/DD/YYYY" id="dl2" name="sdob"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="licexp2" name="licexp2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="uname">DOB </label>
-                                                <input type="date" placeholder="MM/DD/YYYY" id="udob2" name="sdob"
+                                                <input type="date" placeholder="MM/DD/YYYY" id="dob2" name="dob2"
                                                     class="form-control" autocomplete="off">
                                             </div>
 
 
                                             <div class="col-lg-12">
                                                 <label class="control-label" for="uname">Phone Number </label>
-                                                <input type="text" placeholder="M" id="uphone" name="sphone"
+                                                <input type="text" placeholder="M" id="mphone2" name="mphone2"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="H" id="uphone" name="sphone"
+                                                <input type="text" placeholder="H" id="hphone2" name="hphone2"
                                                     class="form-control mb-bot" autocomplete="off">
-                                                <input type="text" placeholder="W" id="uphone" name="sphone"
+                                                <input type="text" placeholder="W" id="wphone2" name="wphone2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
                                                 <label class="control-label" for="snamee1">Email Address </label>
-                                                <input type="email" placeholder="Email" id="snamee1" name="sname1"
+                                                <input type="email" placeholder="Email" id="email2" name="email2"
                                                     class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-6">
@@ -896,12 +893,12 @@ select::after{
                                                     <label class="control-label" for="rad1">Aust Citizen</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="aus2" name="aus2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="aus2" name="aus2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -911,20 +908,20 @@ select::after{
                                                     <label class="control-label" for="rad1">Status</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="status2" name="status2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> PR
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad1"
+                                                    <input type="radio" placeholder="Yes" id="status2" name="status2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> Non-Resident
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Marital Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="mstatus2"
+                                                    name="mstatus2">
                                                     <option>---</option>
                                                     <option value="single">Single</option>
                                                     <option value="married">Married</option>
@@ -933,14 +930,14 @@ select::after{
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Age of Dependants</label>
-                                                <input type="text" placeholder="Age of Dependants" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Age of Dependants" id="agedepend2"
+                                                    name="agedepend2" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Number of
                                                     Dependants</label>
-                                                <input type="text" placeholder="Number of Dependants" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Number of Dependants" id="numdepend2"
+                                                    name="numdepend2" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                             <div class="col-lg-12" style="margin-top:10px;">
@@ -948,28 +945,28 @@ select::after{
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Type of Employment </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="emptype2"
+                                                    name="emptype2">
                                                     <option>---</option>
-                                                    <option value="single">PAYG</option>
-                                                    <option value="married">Self-Employed</option>
-                                                   </select>
+                                                    <option value="PAYG">PAYG</option>
+                                                    <option value="Self-Employed">Self-Employed</option>
+                                                </select>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="uname">Status </label>
-                                                <select class="form-control" autocomplete="off" id="ustatus"
-                                                    name="sstatus">
+                                                <select class="form-control" autocomplete="off" id="empstatus2"
+                                                    name="empstatus2">
                                                     <option>---</option>
-                                                    <option value="single">Full Time</option>
-                                                    <option value="married">Part Time</option>
-                                                    <option value="de-facto">Casual</option>
-                                                    <option value="de-facto">Contract</option>
+                                                    <option value="Full Time">Full Time</option>
+                                                    <option value="Part Time">Part Time</option>
+                                                    <option value="Casual">Casual</option>
+                                                    <option value="Contract">Contract</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-4">
                                                 <label class="control-label" for="caddress1">Employer Name</label>
-                                                <input type="text" placeholder="Employer Name" id="caddress1"
-                                                    name="caddress1" class="form-control" autocomplete="off">
+                                                <input type="text" placeholder="Employer Name" id="empname2"
+                                                    name="empname2" class="form-control" autocomplete="off">
                                             </div>
                                             <div class="clearfix" style="height: 10px;clear: both;"></div>
                                           
@@ -978,36 +975,35 @@ select::after{
                                             </div>
                                             
                                             <div class="col-lg-12">
-                                             
+                                            
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Mortage" id="mortage1"
-                                                        name="mortage1" value="mortage1"
-                                                        style="min-height:auto!important;" autocomplete="off"> Purchase
-                                                    Home (Owner Occupied)
+                                                    <input type="checkbox"  id="purhome2"
+                                                        name="purhome2" value="Purchase Home (Owner Occupied)"
+                                                        style="min-height:auto!important;" autocomplete="off"> Purchase Home (Owner Occupied)
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Own" id="own1" name="own1"
-                                                        value="own1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="refhome2" name="refhome2"
+                                                        value="Refinance Home (Owner Occupied)" style="min-height:auto!important;"
                                                         autocomplete="off"> Refinance Home (Owner Occupied)
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Rent" id="rent1" name="rent1"
-                                                        value="rent1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="debtconso2" name="debtconso2"
+                                                        value="Debt Consolidator" style="min-height:auto!important;"
                                                         autocomplete="off"> Debt Consolidator
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="pip2" name="pip2"
+                                                        value="Purchase Investment Poperty" style="min-height:auto!important;"
                                                         autocomplete="off"> Purchase Investment Poperty
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="riloan2" name="riloan2"
+                                                        value="Refinance Investment Loan" style="min-height:auto!important;"
                                                         autocomplete="off"> Refinance Investment Loan
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <input type="checkbox" placeholder="Other" id="other1" name="other1"
-                                                        value="other1" style="min-height:auto!important;"
+                                                    <input type="checkbox"  id="cons2" name="cons2"
+                                                        value="Constructor" style="min-height:auto!important;"
                                                         autocomplete="off"> Constructor
                                                 </div>
                                             </div>
@@ -1019,16 +1015,16 @@ select::after{
 
                                             <div class="col-lg-6">
                                                 <div class="">
-                                                    <label class="control-label" for="rad1">Have you ever had any
+                                                    <label class="control-label" for="fjudge2">Have you ever had any
                                                         financial judgments or legal proceedings against you?</label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad22"
+                                                    <input type="radio" placeholder="Yes" id="fjudge2" name="fjudge2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad22"
+                                                    <input type="radio" placeholder="Yes" id="fjudge2" name="fjudge2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -1039,12 +1035,12 @@ select::after{
                                                         meeting your financial commitments in the past 2 years? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad33"
+                                                    <input type="radio" placeholder="Yes" id="fcomitt2" name="fcomitt2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad33"
+                                                    <input type="radio" placeholder="Yes" id="fcomitt2" name="fcomitt2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -1055,12 +1051,12 @@ select::after{
                                                         debts currently in arrears? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad43"
+                                                    <input type="radio" placeholder="Yes" id="arrears2" name="arrears2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad43"
+                                                    <input type="radio" placeholder="Yes" id="arrears2" name="arrears2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -1071,12 +1067,12 @@ select::after{
                                                         rising interest rates? How concerned are you? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad53"
+                                                    <input type="radio" placeholder="Yes" id="intrates2" name="intrates2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad53"
+                                                    <input type="radio" placeholder="Yes" id="intrates2" name="intrates2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -1089,12 +1085,12 @@ select::after{
                                                         commitments? </label>
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad63"
+                                                    <input type="radio" placeholder="Yes" id="fsituation2" name="fsituation2"
                                                         value="yes" style="min-height:auto!important;"
                                                         autocomplete="off"> Yes
                                                 </div>
                                                 <div class="col-lg-2">
-                                                    <input type="radio" placeholder="Yes" id="rad1" name="rad63"
+                                                    <input type="radio" placeholder="Yes" id="fsituation2" name="fsituation2"
                                                         value="no" style="min-height:auto!important;"
                                                         autocomplete="off"> No
                                                 </div>
@@ -1104,10 +1100,10 @@ select::after{
                                                     answered 'Yes' to any of these</label>
                                                 <textarea
                                                     placeholder="Please comment if you answered 'Yes' to any of these"
-                                                    id="caddress1" name="caddress1" class="form-control"
+                                                    id="comment2" name="comment2" class="form-control"
                                                     autocomplete="off"></textarea>
                                             </div>
-
+                                                 <input type="text" id="id2" name="id2" value="0" hidden>
                                         </div>
                                     </div>
 
@@ -1180,6 +1176,14 @@ select::after{
         });
 
     });
+    $('#submit1').click(function()
+    {
+        document.getElementById('id1').value='1';
+    });
+    $('#submit2').click(function()
+    {
+        document.getElementById('id2').value='1';
+    });
     $("#addbt1").click(function() {
         $("#basicform2").show();
         $("#rembt2").show();
@@ -1196,23 +1200,56 @@ select::after{
         $("#submit1").show();
     });
     </script>
-
-<!--<script> 
-        $(document).ready(function() { 
-          
-            $(function() { 
-                $( "#udobb" ).datepicker(); 
-                $( "#udob2" ).datepicker(); 
-                $( "#udl" ).datepicker();
-                $( "#dl2" ).datepicker();
-            }); 
-        }) 
-    </script> 
-
+    <!--AJAX CALL -->
     <script>
-	$('#timepicker1').timepicki();
-    $('#time2').timepicki();
-    </script>-->
+      $(document).ready(function() {
+            $("#submit1").click(function(e) {
+                e.preventDefault(); // or make the button type=button
+                    $.ajax({
+                        type: 'POST',
+                        url: 'mailer.php',
+                        dataType: "json",
+                        data: $("#basicform, #id1").serialize(),
+                        success: function(response) { 
+                            alert(response.success); 
+                            
+                        },
+                        error: function(xhr, status, error){
+                            console.log(xhr); 
+                        }
+                    });
+                   
+                
+            });
+        });
+      
+        $(document).ready(function() {
+            $("#submit2").click(function(e) {
+                e.preventDefault(); // or make the button type=button
+                    $.ajax({
+                        type: 'POST',
+                        url: 'mailer.php',
+                        dataType: "json",
+                        data: $("#basicform, #basicform2, #id2").serialize(),
+                        success: function(response) { 
+                            alert(response.success); 
+                        },
+                        error: function(xhr, status, error){
+                            console.log(xhr); 
+                        }
+                    });
+                        
+            });
+        });
+        $(document).ajaxStop(function(){
+                 alert("Your Mail Has Been Sent!!!")
+                 setTimeout(function(){// wait for 5 secs(2)
+                    window.location.reload(); // then reload the page.(3)
+                    }, 2000);
+                    });
+    </script>
+
+
 </body>
 
 </html>
